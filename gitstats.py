@@ -1,5 +1,4 @@
 """This module take statistic data from github.com.
-
 Data includes names of git users, user's repositories, names commits
 contributors, additions and deletions, total commits by days, weeks
 and by last year.
@@ -15,7 +14,6 @@ def git_user_repos(user):
         user: name of user , as string
     Return:
         All user repos info , or None
-
     """
     user_url = GIT_URL + user + '/repos'
     response = urllib.urlopen(user_url)
